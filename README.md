@@ -7,7 +7,12 @@
 3. Basic Calculator (GUI with error handling and float support)
 4. Rock Paper Scissors Game
 5. Simple Alarm Clock – (datetime and playsound)
-
+6. Text-Based Adventure Game - (dict, loops)
+7. Caesar Cipher Encoder/Decoder
+8. Safe Lock Puzzle
+9. Stopwatch with Lapse
+10. Birthday Calendar (I NEED THIS THE MOST)
+11. BONUS : Birthday cake app
 
 ## Intermediate (External Libraries, Basic GUIs, Simple APIs)
 
@@ -17,6 +22,10 @@
 4. POMODORO Timer - Simple – With start/stop buttons using tkinter.
 5. Image to Sketch Converter – Using cv2 (OpenCV).
 6. Typing Speed Test GUI – Displays text, calculates WPM.
+7. Sudoku validator
+8. Flashcard Quiz App
+9. Maze Generator (using recursion and DFS)
+10. Maze Solver - with visual trace
 
 ## Advanced (OOP, APIs, Data Analysis, Async, Websockets)
 
@@ -25,3 +34,8 @@
 3. Simple Chat Room – Socket programming or using asyncio.
 4. Expense Tracker with Graphs – CLI or GUI, uses pandas and matplotlib.
 5. Custom Discord Bot – Using discord.py with some features like music or reminders.
+6. Movie Recommendation System
+7. Template based resume generator
+8. Library Management System
+9. Collaborative Whiteboard
+10. Multiplayer Drawing-Guessing Game (inspired by draw.io)
