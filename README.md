@@ -1,8 +1,8 @@
-# 30 Python Projects
-30 Beginner to Advanced projects done in python for better understanding of the language + practice
+# 30 Python Projects (with GUI)
+30 Beginner to Advanced projects done in python for better understanding of the language + practice.
 
 ## Beginner (Basics & Syntax Practice)
-1. Hangman Game (String manipulation, loops, conditions)
+1. [Hangman Game](Beginner/Hangman/)
 2. Check if two PDF files are identical (File handling)
 3. Basic Calculator (GUI with error handling and float support)
 4. Rock Paper Scissors Game
