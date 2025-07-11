@@ -1,8 +1,8 @@
 # 30 Python Projects (with GUI)
-30 Beginner to Advanced projects done in python for better understanding of the language + practice.
+30 Beginner to Advanced projects done in python for better understanding of the language and GUI + practice. These are ranked based on personal judgment of difficulty, time, and effort invested.
 
-## Beginner (Basics & Syntax Practice)
-1. [Hangman Game](Beginner/Hangman/)
+## Beginner (Core Python, Tkinter Basics)
+1. [Hangman Game](Beginner/Hangman/) ~ _6hrs_
 2. Check if two PDF files are identical (File handling)
 3. Basic Calculator (GUI with error handling and float support)
 4. Rock Paper Scissors Game
@@ -14,7 +14,7 @@
 10. Birthday Calendar (I NEED THIS THE MOST)
 11. BONUS : Birthday cake app
 
-## Intermediate (External Libraries, Basic GUIs, Simple APIs)
+## Intermediate
 
 1. 2048 Game – (logic, OOP)
 2. Desktop Notifier – (plyer or win10toast)
@@ -27,7 +27,7 @@
 9. Maze Generator (using recursion and DFS)
 10. Maze Solver - with visual trace
 
-## Advanced (OOP, APIs, Data Analysis, Async, Websockets)
+## Advanced
 
 1. POMODORO Timer with Graphs – Save session data, show productivity charts (matplotlib).
 2. Twitter Sentiment Analysis – tweepy, TextBlob/VADER, pandas.
