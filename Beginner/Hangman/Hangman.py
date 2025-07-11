@@ -5,6 +5,7 @@
 
 import random
 import tkinter as tk
+import tkinter.font as tkFont
 
 words = ["apple", "table", "chair", "music", "pizza", "house", "smile", "tiger", "magic", "bread", "cloud", "river", "dance", "water", "stone", "green", "orange", "banana", "melon", "cherry", "grapes", "window", "bottle", "blanket", "monster", "circus", "journey", "lantern", "dolphin", "glasses", "mirror", "tunnel", "garden", "pillow", "rocket", "basket", "desert", "planet", "galaxy", "comet", "orbit", "crystal", "whisper", "thunder", "rainbow", "shadow", "silence", "spider", "castle", "forest", "jungle", "magnet", "marble", "pencil", "eraser", "camera", "button", "magnet", "cactus", "hammer", "ladder", "wallet", "jacket", "island", "anchor", "pirate", "dragon", "unicorn", "phoenix", "griffin", "chimera", "mermaid", "kraken", "minotaur", "avalanche", "nightmare", "symphony", "labyrinth", "triangle", "whispering", "kangaroo", "astronaut", "crocodile", "chocolate", "fortune", "eclipse", "balloon", "shadowy", "mystery", "jellyfish", "vampire", "zombie", "werewolf", "puzzle", "warrior", "ninja", "samurai", "castle", "knight", "queen", "crown", "kingdom", "crystal", "potion", "scroll", "beacon", "silence", "candle", "breeze", "whisper", "melody", "rhythm", "harmony", "painting", "sculpture", "artist", "canvas", "theater", "costume", "mask", "treasure", "compass", "lantern", "journal", "voyage", "explorer", "legend", "myth", "talisman", "echo", "silence", "prophecy", "relic", "enigma", "cipher"]
 
@@ -15,8 +16,15 @@ show_word = ["_"] * len(curr_word)
 
 hangman = "HANGMAN"
 hangman_count = 0
-bg = 'pink'
+
 text = "Guess the word:"
+
+def game_end():
+    hangman_label.pack_forget()
+    status_label.pack_forget()
+    instr.pack_forget()
+    letter_input.pack_forget()
+    enter.pack_forget()
 
 def update_display():
     word_display.set(" ".join(show_word))
@@ -45,9 +53,11 @@ def get_letter():
                     curr_word[i] = '-'
 
             if curr_word.count('-') == len(curr_word):
-                text = "You have guessed the word correctly!"
-                game_status.set("\nC O N G R A T U L A T I O N S!")
+                text = "That's it!"
+                game_status.set("CONGRATULATIONS!")
+                g_status_label.config(fg=correct)
                 enter.config(state="disabled")
+                game_end()
 
         else:
             hangman_count += 1
@@ -57,7 +67,10 @@ def get_letter():
                 text = "The word was:"
                 show_word = list(word)
                 game_status.set("G A M E  O V E R")
+                g_status_label.config(fg=wrong, font=(custom_font, 18, 'bold'))
+
                 enter.config(state="disabled")
+                game_end()
 
     elif not letter.isalpha():
         status_text.set("Please enter a valid letter in English!")
@@ -75,6 +88,17 @@ def get_letter():
 
 root = tk.Tk()
 
+#font
+custom_font = "Fixedsys"
+
+#colours
+bg = "#4F6EAB"
+textc = '#D8DEE9'
+correct = '#A3BE8C'
+wrong = '#BF616A'
+hangmanc = '#EBCB8B'
+buttonc = '#D08770'
+
 #GUI window setup
 root.geometry("400x520") #window dimensions
 root.configure(bg=bg)
@@ -88,35 +112,35 @@ status_text = tk.StringVar()
 game_status = tk.StringVar()
 
 #game text
-game_text_label = tk.Label(root, textvariable=game_text, font=('Arial',14), bg=bg)
+game_text_label = tk.Label(root, textvariable=game_text, font=(custom_font,18), fg='black', bg=bg)
 game_text_label.pack(pady=(70, 10))
 
 #Show word
-word_label = tk.Label(root, textvariable=word_display, font=('Arial',12), bg=bg)
+word_label = tk.Label(root, textvariable=word_display, font=(custom_font,16), fg=textc, bg=bg)
 word_label.pack(pady=(0, 15))
 
 #show hangman
-hangman_label = tk.Label(root, textvariable=hangman_display, font=('Arial',12), bg=bg)
-hangman_label.pack(pady=15)
+hangman_label = tk.Label(root, textvariable=hangman_display, font=(custom_font,18), fg=hangmanc, bg=bg)
+hangman_label.pack(pady=(0, 15))
 
 #show status text
-status_label = tk.Label(root, textvariable=status_text, font=('Arial',12), bg=bg)
-status_label.pack(pady=15)
+status_label = tk.Label(root, textvariable=status_text, font=(custom_font,14), bg=bg)
+status_label.pack(pady=(0, 15))
 
 #input instruction
-instr = tk.Label(root, text="Enter a letter: ", font=('Arial',14), bg=bg)
-instr.pack(pady=10)
+instr = tk.Label(root, text="Enter a letter: ", font=(custom_font,14), fg='black', bg=bg)
+instr.pack(pady=5)
 #input
-letter_input = tk.Text(root, height=1, font=('Arial', 16), bg=bg)
-letter_input.pack(pady=10, padx=80)
+letter_input = tk.Text(root, height=1, font=(custom_font,16), fg=textc, bg=bg)
+letter_input.pack(pady=(0,10), padx=80)
 
 #Enter button
-enter = tk.Button(root, text="Enter", font=('Arial',12), bg=bg, command=get_letter)
-enter.pack(pady=15, padx=20)
+enter = tk.Button(root, text="Enter", font=(custom_font,13), fg='black', bg=buttonc, command=get_letter)
+enter.pack(pady=(0, 15), padx=16)
 
 #game status
-status_label = tk.Label(root, textvariable=game_status, font=('Arial',18), bg=bg)
-status_label.pack(pady=25)
+g_status_label = tk.Label(root, textvariable=game_status, font=(custom_font,18), fg=textc, bg=bg)
+g_status_label.pack(pady=20)
 
 update_display()
 
