@@ -1,6 +1,5 @@
 # =====================================
-#       Logic + debugging ~ 2.5 hrs
-#       GUI ~ 25 + 2hr + 22 + min
+#       Logic + debugging ~ 5.5 hrs
 # =====================================
 
 import random
