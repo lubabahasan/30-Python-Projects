@@ -39,3 +39,11 @@
 8. Library Management System
 9. Collaborative Whiteboard
 10. Multiplayer Drawing-Guessing Game (inspired by draw.io)
+
+
+---
+
+## Completed:
+
+<img src="Assets/1_Hangman.png" alt="1 - Hangman" width="200"/>
+<img src="Assets/2_Rock_Paper_Scissors.png" alt="2 - Rock Paper Scissors" width="200"/>
