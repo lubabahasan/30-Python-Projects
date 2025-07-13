@@ -4,7 +4,7 @@
 ## Beginner (Core Python, Tkinter Basics)
 1. [Hangman Game](Beginner/Hangman.py/) ~ _6hrs_
 2. Check if two PDF files are identical (File handling)
-3. Basic Calculator (GUI with error handling and float support)
+3. [Basic Calculator](Beginner\Basic_Calculator.py) ~ _4hrs_
 4. [Rock Paper Scissors Game](Beginner/Rock_Paper_Scissors.py/) ~ _4hrs_
 5. Simple Alarm Clock – (datetime and playsound)
 6. Text-Based Adventure Game - (dict, loops)
@@ -47,3 +47,5 @@
 
 <img src="Assets/1_Hangman.png" alt="1 - Hangman" width="200"/>
 <img src="Assets/2_Rock_Paper_Scissors.png" alt="2 - Rock Paper Scissors" width="200"/>
+<img src="Assets/3_Basic_Calculator.png" alt="3 - Basic Caculator" width="196"/>
+
