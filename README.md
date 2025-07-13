@@ -1,18 +1,18 @@
 # 30 Python Projects (with GUI)
-30 Beginner to Advanced projects done in python for better understanding of the language and GUI + practice. These are ranked based on personal judgment of difficulty, time, and effort invested.
+30 Beginner to Advanced projects done in python for better understanding of the language and GUI + practice. The list order will be updated based on personal judgment of difficulty, time, and effort invested.
 
 ## Beginner (Core Python, Tkinter Basics)
 1. [Hangman Game](Beginner/Hangman.py/) ~ _6hrs_
 2. Check if two PDF files are identical (File handling)
 3. [Basic Calculator](Beginner\Basic_Calculator.py) ~ _4hrs_
-4. [Rock Paper Scissors Game](Beginner/Rock_Paper_Scissors.py/) ~ _4hrs_
+4. [Rock Paper Scissors Game](Beginner/Rock_Paper_Scissors.py/) ~ _2hrs_
 5. Simple Alarm Clock – (datetime and playsound)
 6. Text-Based Adventure Game - (dict, loops)
 7. Caesar Cipher Encoder/Decoder
 8. Safe Lock Puzzle
 9. Stopwatch with Lapse
 10. Birthday Calendar (I NEED THIS THE MOST)
-11. BONUS : Birthday cake app
+11. [BONUS : Birthday Cake](Beginner/Birthday_Cake.py) ~ _4hrs_
 
 ## Intermediate
 
